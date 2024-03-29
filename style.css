@@ -1,0 +1,196 @@
+body {
+  /* font-family: Arial, sans-serif;
+   */
+  font-family: "Comic Neue", cursive;
+  /* background-color: #f0f0f0; */
+  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: none;
+  box-shadow: 10px 5px 30px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.main-board {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.number-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #333;
+  margin: 0 5px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.guess-number {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #333;
+  margin: 0 5px;
+  box-sizing: border-box;
+  background: none;
+  border-radius: 15px;
+}
+
+.btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  background: none;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 10px 5px 30px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+.btn::after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.btn:hover::after {
+  background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+  top: 0px;
+  left: 0px;
+  border-radius: 20px;
+}
+#Retry {
+  margin-left: 40px;
+}
+#Check {
+  margin-right: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.right-Number {
+  background: linear-gradient(90deg, #b4e5d0, #b5d8b7);
+}
+
+.right-Position {
+  background: linear-gradient(90deg, #fdf4c1, #fce9d5);
+}
+
+.score {
+  font-size: 20px;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.highScore {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.howToPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 0;
+  max-width: 400px;
+
+  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+  padding: 6rem;
+  border-radius: 30px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-howToPlay {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: "Comic Neue", cursive;
+}
+
+.rN,
+.rP {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#introduction {
+  text-align: justify;
+}
+#question {
+  margin-left: 280px;
+}
+
+#twoMode {
+  display: flex;
+  justify-content: space-between;
+}
+
+#easyMode {
+  margin-left: 10%;
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+}
+#hardMode {
+  margin-right: 10%;
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+}
